@@ -2,7 +2,7 @@ import lombok.experimental.SuperBuilder;
 
 @SuperBuilder // Для удобства можно использовать билдер
 public abstract class Car {
-    public Engine engine;
+    public Engine engine; // Нет соответствующего класса
     private String color;
     private String name;
     protected void start() {
