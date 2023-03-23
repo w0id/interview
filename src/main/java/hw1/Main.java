@@ -1,3 +1,5 @@
+package hw1;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,8 +19,8 @@ public class Main {
                 .color("red")
                 .engine(new Engine("Diesel", 8))
                 .build();
-        System.out.println("\nLorry name is " + lorry.getName());
-        System.out.println("Lorry color is " + lorry.getColor());
+        System.out.println("\nhw1.Lorry name is " + lorry.getName());
+        System.out.println("hw1.Lorry color is " + lorry.getColor());
         lorry.open();
         lorry.start();
         lorry.move();
@@ -29,16 +31,17 @@ public class Main {
                 .color("grey")
                 .engine(new Engine("Gasoline", 4))
                 .build();
-        System.out.println("\nCar name is " + lwCar.getName());
-        System.out.println("Car color is " + lwCar.getColor());
+        System.out.println("\nhw1.Car name is " + lwCar.getName());
+        System.out.println("hw1.Car color is " + lwCar.getColor());
         lwCar.open();
         lwCar.start();
         lwCar.move();
 
-        System.out.println("\n" + new Shape().draw());
-        System.out.println(new Shape().draw(2d));
-        System.out.println(new Shape().draw(4d,1.4d));
-        System.out.println(new Shape().draw(5));
+        Shape shape = new Shape();
+        System.out.println("\n" + shape.draw());
+        System.out.println(shape.draw(2d));
+        System.out.println(shape.draw(4d,1.4d));
+        System.out.println(shape.draw(5));
 
     }
 }

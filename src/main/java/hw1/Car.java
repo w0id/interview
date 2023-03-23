@@ -1,3 +1,5 @@
+package hw1;
+
 import lombok.experimental.SuperBuilder;
 
 @SuperBuilder // Для удобства можно использовать билдер
@@ -6,7 +8,7 @@ public abstract class Car {
     private String color;
     private String name;
     protected void start() {
-        System.out.println("Car starting");
+        System.out.println("hw1.Car starting");
     }
     abstract void open();
 
