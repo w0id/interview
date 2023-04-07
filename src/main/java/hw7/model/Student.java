@@ -1,4 +1,4 @@
-package hw5;
+package hw7.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,18 +19,11 @@ public class Student {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "mark")
-    private Long mark;
+    @Column(name = "age")
+    private Integer age;
 
-    public Student(final String name, final Long mark) {
+    public Student(final String name, final Integer age) {
         this.name = name;
-        this.mark = mark;
-    }
-
-    @Override
-    public String toString() {
-        return "\nid=" + id +
-                ", name='" + name + '\'' +
-                ", mark=" + mark;
+        this.age = age;
     }
 }
