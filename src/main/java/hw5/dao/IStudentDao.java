@@ -1,4 +1,6 @@
-package hw5;
+package hw5.dao;
+
+import hw5.model.Student;
 
 import java.util.List;
 

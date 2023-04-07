@@ -1,4 +1,4 @@
-package hw5;
+package hw5.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
